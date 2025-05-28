@@ -51,14 +51,12 @@ In VLSI testing, **fault collapsing** is a key optimization technique. It reduce
    ```bash
    git clone https://github.com/your-username/c1908-fault-collapsing.git
    cd c1908-fault-collapsing
-    
+   
 2. Make sure you have Python and matplotlib installed:
-  ```bash
-  pip install matplotlib
-```
-
+   ```bash
+   pip install matplotlib
+   
 3. Drop your `c1908.v` Verilog file in the same directory.
 
 4. ```bash
-python proj.py
-```
+   python proj.py
