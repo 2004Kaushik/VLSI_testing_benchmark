@@ -1,0 +1,18 @@
+
+ISCAS-85 Benchmark: c1908 Fault Equivalence Analysis Report
+-----------------------------------------------------------
+📥 Primary Inputs: 2 (N2898, N552...)
+📤 Primary Outputs: 25 (N2753, N2754, N2755, N2756, N2762...)
+🔌 Total Internal Wires: 855
+🛠️ Total Gates: 718
+
+🔎 Fault Analysis:
+   - Total Faults Before Collapsing: 1710
+   - Total Faults After Collapsing: 1656
+   - Collapse Ratio: 0.9684
+
+🧠 Gate Type Distribution:
+   - NOT  : 277
+   - NAND : 377
+   - AND  : 63
+   - NOR  : 1
