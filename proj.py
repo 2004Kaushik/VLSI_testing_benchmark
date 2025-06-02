@@ -92,17 +92,17 @@ collapse_ratio = round(collapsed / original_faults, 4)
 report = f"""
 ISCAS-85 Benchmark: c1908 Fault Equivalence Analysis Report
 -----------------------------------------------------------
-📥 Primary Inputs: {len(inputs)} ({', '.join(inputs[:5])}...)
-📤 Primary Outputs: {len(outputs)} ({', '.join(outputs[:5])}...)
-🔌 Total Internal Wires: {len(wires)}
-🛠️ Total Gates: {len(gates)}
+Primary Inputs: {len(inputs)} ({', '.join(inputs[:5])}...)
+Primary Outputs: {len(outputs)} ({', '.join(outputs[:5])}...)
+Total Internal Wires: {len(wires)}
+Total Gates: {len(gates)}
 
-🔎 Fault Analysis:
+Fault Analysis:
    - Total Faults Before Collapsing: {original_faults}
    - Total Faults After Collapsing: {collapsed}
    - Collapse Ratio: {collapse_ratio}
 
-🧠 Gate Type Distribution:
+Gate Type Distribution:
 """
 for gtype, count in gate_counts.items():
     report += f"   - {gtype.upper():<5}: {count}\n"
@@ -110,8 +110,8 @@ for gtype, count in gate_counts.items():
 with open("c1908_fault_report.txt", "w", encoding="utf-8") as f:
     f.write(report)
 
-print("✅ All tasks complete!")
-print("📄 Files created:")
+print("All tasks complete!")
+print("Files created:")
 print(" - c1908_collapsed_faults.txt")
 print(" - c1908_fault_report.txt")
 print(" - c1908_gate_distribution.png")
